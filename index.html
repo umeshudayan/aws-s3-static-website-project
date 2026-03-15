@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sizzling Shack | Best Burgers in Town</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fdfaf6;
+        }
+
+        /* Navigation */
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; color: #ffbc0d; }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin: 0; }
+        .btn {
+            background: #e62e2d;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Menu Section */
+        .container { padding: 50px 10%; text-align: center; }
+        
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .menu-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .price { color: #e62e2d; font-weight: bold; font-size: 1.2rem; }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🍔 SIZZLING SHACK</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Bigger. Better. Beefier.</h1>
+        <p>Hand-crafted burgers made with 100% fresh ingredients.</p>
+        <a href="#menu" class="btn">View Menu</a>
+    </section>
+
+    <div class="container" id="menu">
+        <h2>Our Signature Burgers</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>The Classic</h3>
+                <p>Beef patty, lettuce, tomato, and our secret sauce.</p>
+                <p class="price">$8.99</p>
+            </div>
+            <div class="menu-item">
+                <h3>Bacon Blaze</h3>
+                <p>Double beef, crispy bacon, cheddar, and BBQ sauce.</p>
+                <p class="price">$11.99</p>
+            </div>
+            <div class="menu-item">
+                <h3>Veggie Delight</h3>
+                <p>Plant-based patty with avocado and spicy mayo.</p>
+                <p class="price">$9.99</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="container" id="contact" style="background: #eee;">
+        <h2>Visit Us</h2>
+        <p>123 Burger Lane, Foodie City</p>
+        <p>Open Daily: 11:00 AM - 10:00 PM</p>
+        <p>Phone: (555) 123-4567</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Sizzling Shack. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
